@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tros Tutors</title>
+    <style>
+        .container
+        {
+            max-width: 600px;
+            margin: 0 auto;
+            padding:30px 60px;
+            border: 2px solid #0830f8;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(4, 4, 139);
+
+        }
+        body{
+            background-color: #e8dfec;
+        }
+        h1{
+            text-align: center;
+            color: #0830f8;
+            font-size: 40px;
+
+        }
+        h2{
+            text-align: center;
+            border: 2px solid #0830f8;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 30px;
+            color: #302e4d;
+        }
+        img 
+        {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+            color: #302e4d;
+            margin: 20 0 10px;
+        }
+        .more-information
+        {
+            font-size: 15px;
+            text-decoration: none;
+            color: #0830f8;
+        }
+        .more-information:hover
+        {
+            text-decoration: underline;
+            color: #302e4d;
+        }
+        .register
+        {
+            display: block;
+            margin: 20px auto;
+            background-color: #0830f8;
+            color: #e8dfec;
+            font-size: 20px;
+            padding: 15px 20px;
+            border: transparent;
+            border-radius: 12px;
+            box-shadow: 5px 5px 10px rgb(4, 4, 139);
+            transition: all 200ms ease-in-out;
+        }
+        .register:hover
+        {
+            opacity: 0.9;
+            cursor: pointer;
+
+        }
+        footer
+        {
+            text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tros Tutors</h1>
+        <h2><em>Best Tutors Ever!</em></h2>
+
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/949/original/WhatsApp_Image_2024-02-05_at_22.59.39.jpeg?1707166855" alt="Tros tutors logo">
+
+        <p>
+            TROS Tutors provides affordable tutoring services to students in need.The organization is committed to helping students achieve academic success and reach their full potential.The tutors are highly qualified and experienced, and they work closely with students  to provide personalized supportand guidance.The Rose of Sharon Tutors is dedicated to making positive impact in the lives of students and their families ,and they are passionate about helping students succeed.
+        </p>
+        
+        <a href="https://trostutors.co.za/" target="_blank" class="more-information">Learn more by navigating to their official webpage
+        
+        </a>
+    
+        
+        <button class= "register">
+            <em>📝Register Here</em>
+        </button>
+        <br>
+        <footer>
+            This page was build by 
+            <a href=" " >Takalani Akonisaho</a>
+        </footer>
+        
+
+    </div>
+    <script>
+        function register()
+        {
+            let name = prompt("what is your name? ");
+            let email = prompt("What is your email address?");
+            let emoji = prompt("what is your favourite emoji? ");
+            
+            if(name.length)
+            {
+                alert("Thank you, "  + name +"! we'll be in touch by email, meanwhile browse through our websites and see all the services we offer! "+ emoji);
+            }
+            else
+            {
+                alert("Thank you,sir/madam!, we'll be in touch by email, meanwhile browse through our websites and see all the services we offer! ");
+            }
+        }
+
+
+        let registerButton = document.querySelector(".register");
+        registerButton.addEventListener("click",register)
+
+       
+    </script>
+</body>
+</html>
